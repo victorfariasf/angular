@@ -1,0 +1,8 @@
+<div class="movie-card">
+    <img class="poster"
+    [src]="getPosterUrl(movie.name)"
+    (error)="onImageError($event)"
+    alt="{{movie.name}}"
+    >
+    <h3>{{movie.name | titlecase}}</h3>
+</div>
