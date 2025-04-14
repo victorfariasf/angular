@@ -1,15 +1,19 @@
-<h1>Lista de filmes</h1>
-<form class="add-movie-form">
-    <label for="movieName">
-        Insira um novo filme
-        <input [(ngModel)] = "newMovie.name" name="movieName" list="listaFilmes">
-    </label>
-    <datalist id="listaFilmes">
-        <option *ngFor="let movie of moviePosters" [value]="movie"></option>
-    </datalist>
-
-    <button (click)="addNewMovie()">Adicionar</button>
-</form>
-<div class="movies-list">
-    <app-movie *ngFor="let movie of selectedMovies" [movie]="movie" ></app-movie>
+<div class="class">
+    <h1>Lista de filmes</h1>
+    <form class="add-movie-form">
+        <label for="movieName">
+            Insira um novo filme
+            <input [(ngModel)] = "newMovie.name" name="movieName" list="listaFilmes">
+        </label>
+        <datalist id="listaFilmes">
+            <option *ngFor="let movie of moviePosters" [value]="movie"></option>
+        </datalist>
+    
+        <button (click)="addNewMovie()">Adicionar</button>
+    </form>
+    <div class="movies-list">
+        <app-movie *ngFor="let movie of selectedMovies" [movie]="movie" ></app-movie>
+    </div>
 </div>
+
+
