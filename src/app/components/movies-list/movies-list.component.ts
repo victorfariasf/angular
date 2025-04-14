@@ -17,7 +17,7 @@ export class MoviesListComponent implements OnInit {
     'Drive',
     'Estranho mundo de jack',
     'Man of steel',
-    'Somewhere in past',
+    'Somewhere in time',
     'Spider Man'
   ]
 
